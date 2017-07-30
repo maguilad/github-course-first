@@ -1,3 +1,39 @@
 # Git Course
 
 Esse é um repositório de teste para ensinar como o Git funciona.
+
+Para quem usa Windows e preferi usar outro editor diferente do (Vim) padrão do Git, pode trocar nas configurações do Git ou simplesmente usar a palavra-chave 
+do mesmo para isso, exemplo:
+Usando o notepad popular bloco de notas padrão do Windows.:
+notepad titulo.txt
+
+Para usar outro editor e necessário que o mesmo tenha uma palavra-chave, isto é, tenha que chama-lo de forma mais curta, caso contrário precisa informar o 
+caminho completo antes de indicar o nome do arquivo, exemplo .:
+C:\Program Files\Notepad++\notepad++.exe titulo.txt
+
+Dessa forma fica muito longo o comando, então uma maneira de resolver isso é:
+
+1 - Usando o recurso do próprio Windows:
+Se no próprio terminal do git (Git cmd) ou no terminal nativo do windows (cmd) digitar notepad++ e teclar enter vai apresentar uma mensagem de erro, pois, 
+esse comando não é reconhecido. Outra forma por exemplo de saber que esse comando não tem nenhuma referencia alguma é tentar executar pelo Executar 
+usando as teclas logo do Windows + R juntas para abrir a janelinha, digite notepad++ e tecle enter, provavelmente não vai fazer nada ou então mostrar mensagem 
+de erro. 
+
+Uma forma que encontrei foi definir uma palavra-chave (alias) para o editor deixando sua chamada curta. Usando o próprio recurso do Windows.
+
+doskey alias="drive:\caminho do programa\seu executavel" $*
+
+Dessa forma definir o notepad++ como seu alias curto:
+doskey notepad++="C:\Program Files\Notepad++\notepad++.exe" $*
+
+Lembre-se que esse comando deve ser feito no Git cmd e, precisa reinicia-lo para que reconheça o novo comando.
+Se quiser usar esse alias no cmd nativo, também se faz necessário a definição do alias.
+
+Mas se não quiser mais usar esse alias e seu comando basta usar o seguinte nos terminais:
+doskey alias = 
+
+Exemplo desse para o notepad++:
+doskey notepad++ =
+
+Use a palavra-chave de alias de forma consciente, não comece a criar qualquer alias sem sentido ou alterando os alias nativos do Windows, pois, pode ocorrer 
+problemas sérios no sistema operacional
